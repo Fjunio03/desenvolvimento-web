@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container{
+            width: 60%;
+            margin: auto;
+        }
+        .form-group{
+            margin-bottom: 10px;
+        }
+        label{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h3>Formulário</h3>
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+            
+            <input type="hidden" name="campo_escondido" value="escondido">
+            <div class="form-group">
+                <label>Selecione uma das opções</label>
+                <select name="campo_seleção[]" id="" required>
+                    <optgroup label="paises">
+                        
+                        <option value="pt">Portugal</option>
+                        <option value="br">Brasil</option>
+                        <option value="ao">Angola</option>
+                        <option value="mc">Moçambique</option>
+                        <option value="cv">Cabo Verde</option>
+                    </optgroup>
+                    <optgroup label="outros paises">
+                        <option value="fr">França</option>
+                        <option value="de">Alemanha</option>
+                        <option value="es">Espanha</option>
+                    </optgroup>
+                    
+                </select>
+            </div>
+
+            <!--Enviar-->
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+   
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container{
+            width: 60%;
+            margin: auto;
+        }
+        .form-group{
+            margin-bottom: 10px;
+        }
+        label{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h3>Formulário</h3>
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="campo-salvar" id="" value="salvar">
+                    Atualizar os dados automaticamente.
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="campo-atualizar" id="" value="atualizar">
+                    Salvar todas as informações automaticamente.
+                </label>
+            </div>
+            <!--Enviar-->
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

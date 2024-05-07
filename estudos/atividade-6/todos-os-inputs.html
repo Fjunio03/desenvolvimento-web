@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container{
+            width: 60%;
+            margin: auto;
+        }
+        .form-group{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h3>Formulário</h3>
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+            <!--Nome-->
+            <div class="form-group">
+                <input type="text" name="campo_texto" minlength="5" maxlength="20" placeholder="Digite o seu nome" required>
+            </div>
+            <!--Email-->
+            <div class="form-group">
+                <input type="email" name="campo_email" placeholder="Digite seu e-mail" multiple>
+            </div>
+            <!--Senha-->
+            <div class="form-group">
+                <input type="password" name="campo_senha" required placeholder="Digite sua senha">
+            </div>
+            <!--Numero-->
+            <div class="form-group">
+                <input type="number" name="campo_numero" placeholder="Digite um valor" min="0" max="10" step="0.01">
+            </div>
+            <!--Site-->
+            <div class="form-group">
+                <input type="url" name="campo_site" placeholder="Seu site EX:https://...">
+            </div>
+            <!--Data-->
+            <div class="form-group">
+                <input type="date" name="campo_data" >
+            </div>
+            <!--Hora-->
+            <div class="form-group">
+                <input type="time" name="Campo-hora" >
+            </div>
+            <!--Semana-->
+            <div class="form-group">
+                <input type="week" name="Campo-semana" >
+            </div>
+            <!--Mes-->
+            <div class="form-group">
+                <input type="month" name="Campo-mes" >
+            </div>
+            <!--Data e Hora-->
+            <div class="form-group">
+                <input type="datetime-local" name="campo_hora_data" >
+            </div>
+            <!--Cor-->
+            <div class="form-group">
+                <input type="color" name="campo-cor" value="#ff0000">
+            </div>
+            <!--Enviar-->
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

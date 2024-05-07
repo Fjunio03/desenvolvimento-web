@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container{
+            width: 60%;
+            margin: auto;
+        }
+        .form-group{
+            margin-bottom: 10px;
+        }
+        label{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h3>Formulário</h3>
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+            <p>Género:</p>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="genero" id="" value="masculino" checked>
+                    Masculino
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="genero" id="" value="feminino">
+                    Feminino
+                </label>
+            </div>
+            <p>Qual o sistema operacional do seu computador?</p>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sistema-operacional" id="" value="windowns" checked>
+                    Windowns
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sistema-operacional" id="" value="Mac">
+                    Mac
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sistema-operacional" id="" value="Linux">
+                    Linux
+                </label>
+            </div>
+            <!--Enviar-->
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

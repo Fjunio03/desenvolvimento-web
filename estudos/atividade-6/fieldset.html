@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container {
+            width: 60%;
+            margin: auto;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h3>Formulário</h3>
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+
+           <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="form-group">
+                <label for="">Nome</label>
+                <input type="text" name="Nome" id="">
+            </div>
+            <div class="form-group">
+                <label for="">Apelido</label>
+                <input type="text" name="apelido" id="">
+            </div>
+           </fieldset>
+
+            <div class="form-group">
+                <label for="">
+                    <input type="radio" name="opcao" id="" checked>
+                    opcao 1
+                </label>
+                <label for="">
+                    <input type="radio" name="opcao" id="">
+                    opcao 2
+                </label>
+                <label for="">
+                    <input type="radio" name="opcao" id="">
+                    opcao 3
+                </label>
+            </div>
+
+
+            <!--Enviar-->
+            <div class="form-group">
+                <button type="button">Botão</button>
+                <input type="reset" value="Limpar" accesskey="l" title="Alt + L">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
