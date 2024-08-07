@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        article {
+            padding: 40px;
+        }
+
+        .visivel-mobile{display: block;}
+        .visivel-tablet{display: none;}
+        .visivel-desktop{display: none;}
+
+        @media (min-width: 576px){
+            .visivel-mobile{display: none;}
+            .visivel-tablet{display: block;}
+            .visivel-desktop{display: none;}
+        }
+        @media (min-width: 992px){
+            .visivel-mobile{display: none;}
+            .visivel-tablet{display: none;}
+            .visivel-desktop{display: block;}
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h3>Conteúdo diferente para cada dispositivo</h3>
+    </header>
+
+    <section>
+        <article class="visivel-mobile">
+            <h1>Apenas em mobile</h1>
+        </article>
+        <article class="visivel-tablet">
+            <h1>Apenas em tablet</h1>
+        </article>
+        <article class="visivel-desktop">
+            <h1>Apenas em desktop</h1>
+        </article>
+    </section>
+
+</body>
+</html>

@@ -82,3 +82,11 @@ footer > p {
     font-size: 12px;
     margin-top: 50px;
 }
+
+.botao {
+    padding: 10px 20px;
+    background-color: rgb(255, 63, 63);
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
+}

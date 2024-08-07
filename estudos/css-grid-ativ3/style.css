@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.fundo{
+    background-color: white;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 28% 28% 28% auto;
+    grid-template-rows: 15% 20% auto 10%;
+    grid-template-areas: 
+    "header header header header"
+    "text text text aside"
+    "content content content aside"
+    "footer footer footer footer";
+    grid-gap: 5px;
+}
+header{
+    grid-area: header;
+    display: grid;
+    background-color: rgb(75,0,75);
+    padding: 20px;
+    color: white;
+}
+.img{
+    justify-self: end;
+    align-self: center;
+    width: 80px;
+    height: 60px;
+    margin: auto 10px;
+    background-color: rgb(155,20,155);
+    padding: 10px;
+    color: white;
+}
+.text{
+    grid-area: text;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+}
+.text div{
+    padding: 10px;
+    color: white;
+}
+.text1{
+    background-color: rgb(38,6,182);
+}
+.text2{
+    background-color: rgb(71,38,216);
+}
+.text3{
+    background-color: rgb(87,60,240);
+}
+
+article{
+    grid-area: content;
+    background-color: rgb(125,125,238);
+    padding: 10px;
+}
+aside{
+    grid-area: aside;
+    background-color: rgb(47,72,216);
+    color: white;
+    padding: 20px;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(75,3,75);
+    color: white;
+    padding: 10px;
+}
